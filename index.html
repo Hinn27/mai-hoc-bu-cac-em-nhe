@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap"/>
+    <title>LUGAR - Premium Real Estate in Dubai</title>
+</head>
+
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="#home" class="logo-text">LUGAR</a>
+        </div>
+        <nav class="main-menu">
+            <a href="#home" class="menu-item active">HOME</a>
+            <a href="#about" class="menu-item">ABOUT</a>
+            <a href="#projects" class="menu-item">PROJECTS</a>
+            <a href="#contact" class="menu-item">CONTACT</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">A home is built with love and dreams</h1>
+            <p class="hero-subtitle">Real estate farm that makes your dreams true</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Our Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+        <div class="hero-decorations">
+            <img class="decorative-arrow-1" src="./Resources/muiten1.svg" alt="Decorative arrow">
+            <img class="decorative-arrow-2" src="./Resources/raubentrai.svg" alt="Decorative arrow">
+            <img class="decorative-arrow-3" src="./Resources/raubenphai.svg" alt="Decorative arrow">
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="./Resources/nha.jpg" alt="Luxury property in Dubai" class="property-image">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title">Award winning real estate company in Dubai</h2>
+                <p class="about-description">
+                    Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra
+                    scelerisque. Ipsum, turpis facilisis tempor pulvinar in lobortis ornare magna.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">34+</div>
+                        <div class="stat-label">PREVIOUS PROJECTS</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">20y</div>
+                        <div class="stat-label">YEARS EXPERIENCE</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">ONGOING PROJECTS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-content">
+                <h2 class="section-title">Ongoing projects</h2>
+                <p class="section-subtitle">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+            </div>
+            <div class="section-controls">
+                <button class="nav-btn prev-btn" id="prevBtn">
+                    <i class="bi bi-caret-left-fill"></i>
+                </button>
+                <button class="nav-btn next-btn" id="nextBtn">
+                    <i class="bi bi-caret-right-fill"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="projects-carousel">
+            <div class="projects-slider" id="projectsSlider">
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="Resources/vintage-villa.jpg" alt="Vintage Villa" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Vintage Villa</h3>
+                        <div class="project-location">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>2715 Ash Dr. San Jose, Dubai</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="./Resources/tonga-villa.jpg" alt="Tonga Villa" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Tonga Villa</h3>
+                        <div class="project-location">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>1901 Thornridge Cir. Shiloh 81063</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="./Resources/penhouse.jpg" alt="Penthouse" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Penthouse</h3>
+                        <div class="project-location">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>2464 Royal Ln. Mesa, 45463</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="card-image">
+                        <img src="./Resources/nha.jpg" alt="Smart City Project" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Smart city projecct</h3>
+                        <div class="project-location">
+                            <i class="bi bi-geo-alt"></i>
+                            <span>2715 Ash Dr. San Jose, Dubai</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section">
+    <div class="container">
+        <div class="testimonial-header">
+            <h2 class="section-title">Few smiles and comment</h2>
+            <p class="section-subtitle">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+        </div>
+        <div class="testimonial-content">
+            <div class="testimonial-image">
+                <img src="./Resources/nguoi.jpg" alt="Happy client" class="client-photo">
+            </div>
+            <div class="testimonial-text">
+                <div class="quote-icon">
+                    <i class="bi bi-quote"></i>
+                </div>
+                <blockquote class="testimonial-quote">
+                    "Dream house isn't dream anymore"
+                </blockquote>
+                <p class="testimonial-description">
+                    Semper arcu mauris aliquam lacus. Massa erat vitae ultrices pharetra
+                    scelerisque. Ipsum, turpis facilisis tempor pulvinar.
+                </p>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <div class="author-name">Brooklyn Simmons</div>
+                        <div class="author-title">Artist</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-image">
+                <img src="./Resources/nha2.jpg" alt="Contact us" class="contact-photo">
+            </div>
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h2 class="section-title">Contact us</h2>
+                    <p class="section-subtitle">Turpis facilisis tempor pulvinar in lobortis ornare magna.</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="firstName" required>
+                            <label for="firstName">First name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="lastName" name="lastName" required>
+                            <label for="lastName">Last name</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone number</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="description" name="description" rows="4" required></textarea>
+                        <label for="description">Description</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Get a quote</button>
+                    <p class="form-note">We don't sell your email and spam</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <h3>Lugar</h3>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <div>
+                            <p>2118 Thornridge Cir.</p>
+                            <p>Dubai, UAE 35624</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-telephone"></i>
+                        <span>+33 415 65356 - 9</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-envelope"></i>
+                        <span>contact@lugar.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Legal Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Conditions</a></li>
+                    <li><a href="#">Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Social media</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright @ 2022 Lugar Inc.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
