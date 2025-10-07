@@ -359,6 +359,8 @@ body {
 }
 
 .projects-carousel {
+    position: relative;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -369,8 +371,10 @@ body {
 }
 
 .project-card {
-    flex: 0 0 350px;
-    background-color: var(--white);
+    min-width: calc(33.333% - 10.7px); /* 3 card trên 1 hàng */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     overflow: hidden;
 }
 
@@ -386,6 +390,7 @@ body {
     height: 100%;
     border-radius: var(--border-radius-xl);
     box-shadow: var(--shadow-xl);
+    object-fit: cover;
 }
 
 .card-content {
