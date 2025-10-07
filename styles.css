@@ -1,4 +1,4 @@
-/* ===== CSS RESET & BASE STYLES ===== */
+/* CSS RESET & BASE STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== CSS VARIABLES ===== */
+/* CSS VARIABLES */
 :root {
     --primary-color: #1e3240;
     --secondary-color: #afd4e2;
@@ -42,7 +42,7 @@ body {
     --transition: none;
 }
 
-/* ===== UTILITY CLASSES ===== */
+/* UTILITY CLASSES */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -101,7 +101,7 @@ body {
     color: var(--white);
 }
 
-/* ===== HEADER & NAVIGATION ===== */
+/* HEADER & NAVIGATION */
 .header {
     position: fixed;
     top: 0;
@@ -171,7 +171,7 @@ body {
     width: 100%;
 }
 
-/* ===== HERO SECTION ===== */
+/* HERO SECTION */
 .hero {
     position: relative;
     height: 800px;
@@ -258,7 +258,7 @@ body {
     height: 25px;
 }
 
-/* ===== ABOUT SECTION ===== */
+/* ABOUT SECTION */
 .about-section {
     padding: 96px 0;
     background-color: var(--white);
@@ -320,7 +320,7 @@ body {
     font-weight: 500;
 }
 
-/* ===== PROJECTS SECTION ===== */
+/* PROJECTS SECTION */
 .projects-section {
     padding: 96px 0;
 }
@@ -398,7 +398,7 @@ body {
     color: var(--text-dark);
 }
 
-/* ===== TESTIMONIALS SECTION ===== */
+/* TESTIMONIALS SECTION */
 .testimonials-section {
     padding: 96px 0;
     background-color: var(--white);
@@ -487,7 +487,7 @@ body {
     display: inline-block;
 }
 
-/* ===== CONTACT SECTION ===== */
+/* CONTACT SECTION */
 .contact-section {
     padding: 96px 0;
 }
@@ -599,7 +599,7 @@ body {
     box-shadow: var(--shadow-xl);
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 .footer {
     background-color: var(--primary-color);
     color: var(--white);
@@ -667,17 +667,14 @@ body {
     color: var(--gray-300);
 }
 
-/* ===== ANIMATIONS REMOVED ===== */
-
-/* ===== LOADING STATES ===== */
+/* LOADING STATES*/
 .loading {
     opacity: 0.6;
     pointer-events: none;
 }
 
-/* ===== ACCESSIBILITY ===== */
+/* ACCESSIBILITY */
 
-/* Focus styles for better accessibility */
 button:focus,
 input:focus,
 textarea:focus,
@@ -686,7 +683,6 @@ a:focus {
     outline-offset: 2px;
 }
 
-/* High contrast mode support */
 @media (prefers-contrast: high) {
     :root {
         --text-light: #000000;
