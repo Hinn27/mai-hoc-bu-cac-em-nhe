@@ -54,8 +54,10 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 	const viTriToiDa = Math.ceil(slider.children.length / soAnhHienThi) - 1;
 	if (viTriHienTai < viTriToiDa) {
 		viTriHienTai++;
-		updateSlider();
+	} else {
+		viTriHienTai = 0; // quay ve dau
 	}
+	updateSlider();
 });
 
 // ham cap nhat vi tri slider
