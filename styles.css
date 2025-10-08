@@ -150,8 +150,7 @@ body {
     transition: var(--transition);
 }
 
-.menu-item:hover,
-.menu-item.active {
+.menu-item:hover {
     color: var(--primary-color);
     font-style: italic;
     font-size: 16px;
@@ -167,8 +166,7 @@ body {
     transition: width 0.3s ease;
 }
 
-.menu-item:hover::after,
-.menu-item.active::after {
+.menu-item:hover::after {
     width: 100%;
 }
 
@@ -378,13 +376,6 @@ body {
     border-radius: 12px;
     overflow: hidden;
 }
-
-/*.card-image {*/
-/*    position: relative;*/
-/*    height: 490px;*/
-/*    overflow: hidden;*/
-/*    border-radius: var(--border-radius-xl);*/
-/*}*/
 
 .card-image img {
     display: block;
