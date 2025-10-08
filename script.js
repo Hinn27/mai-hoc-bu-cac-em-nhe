@@ -63,3 +63,36 @@ function updateSlider() {
 	const offset = viTriHienTai * chieuDaiAnh * soAnhHienThi;
 	slider.style.transform = `translateX(-${offset}px)`;
 }
+
+// CONTACT US //
+const submitBtn = document.getElementById('submitBtn');
+const firstNameInput = document.getElementById('firstName');
+const lastNameInput = document.getElementById('lastName');
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
+const contactForm = document.getElementById('description');
+
+// ham kiem tra email
+function mailHopLe(email) {
+	const regexMail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	if (!regexMail.test(email)) {
+		throw new Error('Email không hợp lệ');
+	}
+	return true;
+}
+
+// ham kiem tra so dien thoai
+function soDienThoaiHopLe(phone) {
+	const regexPhone = /^\+?[0-9]{10}$/;
+	if (!regexPhone.test(phone)) {
+		throw new Error('Số điện thoại không hợp lệ');
+	}
+	return true;
+}
+
+// xu ly su kien khi submit form
+submitBtn.addEventListener('click', function(event) {
+  try {} catch (error) {
+    alert(error.message);
+  }
+});
