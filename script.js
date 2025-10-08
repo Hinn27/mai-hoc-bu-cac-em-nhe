@@ -83,7 +83,7 @@ function mailHopLe(email) {
 
 // ham kiem tra so dien thoai
 function soDienThoaiHopLe(phone) {
-	const regexPhone = /^\+?[0-9]{10}$/;
+	const regexPhone = /^\+?[0-9]{10,}$/;
 	if (!regexPhone.test(phone)) {
 		throw new Error('Số điện thoại không hợp lệ');
 	}
@@ -92,7 +92,31 @@ function soDienThoaiHopLe(phone) {
 
 // xu ly su kien khi submit form
 submitBtn.addEventListener('click', function(event) {
-  try {} catch (error) {
+  try {
+	  // .trim() loai bo khoang trang
+	  if (!firstNameInput.value.trim()) {
+		  throw new Error('Vui lòng nhập tên');
+	  }
+	  if (!lastNameInput.value.trim()) {
+		  throw new Error('Vui lòng nhập họ');
+	  }
+	  // kiem tra email va so dien thoai bang regex
+	  mailHopLe(emailInput.value);
+	  soDienThoaiHopLe(phoneInput.value);
+	  
+	  if (!contactForm.value.trim()) {
+		  throw new Error('Vui lòng nhập nội dung liên hệ');
+	  }
+	  alert('Gửi liên hệ thành công!');
+	  
+	  // reset form ve trang thai ban dau bang cach gan chuoi rong bang .value
+	  firstNameInput.value = '';
+	  lastNameInput.value = '';
+	  emailInput.value = '';
+	  phoneInput.value = '';
+	  contactForm.value = '';
+	  
+  } catch (error) {
     alert(error.message);
   }
 });
