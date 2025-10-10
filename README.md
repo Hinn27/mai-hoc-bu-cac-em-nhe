@@ -1,1 +1,1 @@
-Link Vercel: https://landingpage-05-github-io.vercel.app/
+Link Vercel: https://landingpage-05.vercel.app/
